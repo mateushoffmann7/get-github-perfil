@@ -4,7 +4,7 @@ const profileImg = document.querySelector(".imgPerfil img");
 const list = document.querySelector(".list");
 
 const handleAddPerfil = async (e) => {
-  let response = await fetch(`/api/github?username=${input.value}`);
+  let response = await fetch(`https://api.github.com/users/${input.value}`);
   let json = await response.json();
   if (response.ok && json.login) {
     if (input.value !== "" && e.key === "Enter") {
