@@ -84,3 +84,8 @@ body {
 .list {
   list-style: none;
 }
+
+.textFooter {
+  color: #d9c2a7;
+  margin: 10px;
+}

@@ -1,5 +1,3 @@
-//https://avatars.githubusercontent.com/u/184573664?v=4
-//https://api.github.com/users/mateushoffmann7
 const input = document.querySelector(".inputSearch");
 const sayHello = document.querySelector(".textHello");
 const profileImg = document.querySelector(".imgPerfil img");
@@ -12,7 +10,16 @@ const handleAddPerfil = async (e) => {
     throw new Error("");
   }
   if (input.value !== "" && e.key === "Enter") {
+    sayHello.innerHTML =
+      json.name === null ? "---" : `Olá, me chamo ${json.name}!`;
     profileImg.setAttribute("src", json.avatar_url);
+    const newBio = document.createElement("li");
+    newBio.innerHTML = json.bio === null ? "---" : `Bio: ${json.bio}`;
+    const newLocation = document.createElement("li");
+    newLocation.innerHTML =
+      json.location === null ? "---" : `Localização: ${json.location}`;
+    list.append(newBio);
+    list.append(newLocation);
   }
 };
 
