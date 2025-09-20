@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: none;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  background-color: #402a25;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  background-color: #f29f05;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.geral {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1 {
+  color: #d9c2a7;
+}
+
+.barTitle {
+  height: 2px;
+  width: 230px;
+  background-color: #d9c2a7;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleProject,
+.boxSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #402a25;
+}
+
+.titleProject {
+  margin: 50px 0 20px 0;
+}
+
+.sectionSearch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.boxSearch input {
+  border-radius: 8px;
+  padding: 5px 40px;
+  margin: 40px 0 0 0;
+  border: 2px solid #d9c2a7;
+}
+
+.boxSearch input::placeholder {
+  font-size: 11px;
+  color: #402a25;
+  text-align: center;
+}
+
+.imgPerfil img {
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #d9c2a7;
+  box-shadow: 2px 2px 10px #402a25;
+}
+
+.list {
+  list-style: none;
+}
