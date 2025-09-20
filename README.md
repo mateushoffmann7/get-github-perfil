@@ -1,7 +1,8 @@
 Get GitHub Perfil
 Um projeto simples e eficaz para buscar e exibir perfis de usuários do GitHub, consumindo a GitHub API.
 
-<img width="537" height="741" alt="image" src="https://github.com/user-attachments/assets/3b6a757d-a917-468e-a37f-3c2f65778c82" />
+<img width="1468" height="841" alt="image" src="https://github.com/user-attachments/assets/32083bb8-7c95-46a6-a476-c8cdd238096c" />
+
 
 Funcionalidades
 Busca Rápida: Digite o nome de usuário e pressione Enter para ver as informações do perfil.
