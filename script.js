@@ -1,16 +1,10 @@
-import { GITHUB_TOKEN } from "./config.js";
 const input = document.querySelector(".inputSearch");
 const sayHello = document.querySelector(".textHello");
 const profileImg = document.querySelector(".imgPerfil img");
 const list = document.querySelector(".list");
 
 const handleAddPerfil = async (e) => {
-  let response = await fetch(`https://api.github.com/users/${input.value}`, {
-    headers: {
-      Authorization: `token ${GITHUB_TOKEN}`,
-      Accept: "application/vnd.github.v3+json",
-    },
-  });
+  let response = await fetch(`https://api.github.com/users/${input.value}`);
   let json = await response.json();
   if (response.ok && json.login) {
     if (input.value !== "" && e.key === "Enter") {
