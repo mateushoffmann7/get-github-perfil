@@ -7,22 +7,22 @@ const handleAddPerfil = async (e) => {
   let response = await fetch(`https://api.github.com/users/${input.value}`);
   let json = await response.json();
   if (json.login === undefined) {
-    throw new Error("");
-  }
-  if (input.value !== "" && e.key === "Enter") {
-    sayHello.innerHTML =
-      json.name === null ? "---" : `Olá, me chamo ${json.name}!`;
-    profileImg.setAttribute("src", json.avatar_url);
-    const newBio = document.createElement("li");
-    newBio.classList.add("newLi");
-    newBio.innerHTML = json.bio === null ? "---" : `Bio: ${json.bio}`;
-    const newLocation = document.createElement("li");
-    newLocation.classList.add("newLi");
-    newLocation.innerHTML =
-      json.location === null ? "---" : `Localização: ${json.location}`;
-    list.append(newBio);
-    list.append(newLocation);
-    input.value = "";
+    if (input.value !== "" && e.key === "Enter") {
+      list.innerHTML = "";
+      sayHello.innerHTML =
+        json.name === null ? "---" : `Olá, me chamo ${json.name}!`;
+      profileImg.setAttribute("src", json.avatar_url);
+      const newBio = document.createElement("li");
+      newBio.classList.add("newLi");
+      newBio.innerHTML = json.bio === null ? "---" : `Bio: ${json.bio}`;
+      const newLocation = document.createElement("li");
+      newLocation.classList.add("newLi");
+      newLocation.innerHTML =
+        json.location === null ? "---" : `Localização: ${json.location}`;
+      list.append(newBio);
+      list.append(newLocation);
+      input.value = "";
+    }
   }
 };
 
