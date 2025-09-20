@@ -8,11 +8,7 @@ Um projeto simples e eficaz para buscar e exibir perfis de usuários do GitHub, 
 Funcionalidades
 Busca Rápida: Digite o nome de usuário e pressione Enter para ver as informações do perfil.
 
-Informações Detalhadas: Exibe dados como foto de perfil, nome, localização, número de seguidores, perfis que está seguindo, e links para as redes sociais e o perfil no GitHub.
-
-Design Responsivo: A interface se adapta a diferentes tamanhos de tela, proporcionando uma ótima experiência em dispositivos móveis e desktops.
-
-Tratamento de Erros: Mensagens de erro claras são exibidas caso o usuário não seja encontrado.
+Informações Detalhadas: Exibe dados como foto de perfil, nome, bio e localização informadas no GitHub.
 
 Tecnologias Utilizadas
 Este projeto foi construído utilizando as seguintes tecnologias:
@@ -32,8 +28,3 @@ Manipulação do DOM: Para renderizar as informações do perfil dinamicamente n
 Como Usar
 Basta acessar meu deploy: https://get-github-perfil.vercel.app/
 
-Bash
-
-git clone https://github.com/mateushoffmann7/get-github-perfil.git
-Abra o arquivo index.html:
-Navegue até a pasta clonada e abra o arquivo index.html em seu navegador de preferência.
