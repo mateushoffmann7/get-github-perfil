@@ -29,7 +29,6 @@ const handleAddPerfil = async (e) => {
       list.append(newLocation);
       input.value = "";
     } else {
-      sayHello.innerHTML = "Usuário não encontrado!";
       list.innerHTML = "";
       profileImg.setAttribute(
         "src",
