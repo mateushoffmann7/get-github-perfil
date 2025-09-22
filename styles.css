@@ -97,6 +97,11 @@ body {
   margin: 10px;
 }
 
+.error {
+  background-color: rgba(126, 71, 71, 0.556);
+  border: rgb(214, 66, 66) 1px solid;
+}
+
 @media (max-width: 400px) {
   .boxSearch input::placeholder {
     font-size: 8px;
